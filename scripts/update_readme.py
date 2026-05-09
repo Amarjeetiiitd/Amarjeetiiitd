@@ -7,11 +7,12 @@ Run via GitHub Actions with a PAT that has: repo, read:user scopes.
 
 import os, re, requests
 from datetime import datetime, timezone
+from pathlib import Path
 
 # ── CONFIG ────────────────────────────────────────────────────────────────────
 USERNAME   = "Amarjeetiiitd"
-TOKEN      = os.environ["GH_TOKEN"]          # set as GitHub Actions secret
-README     = "README.md"
+TOKEN      = os.environ["GH_TOKEN"]
+README     = Path(__file__).resolve().parent.parent / "README.md"
 HEADERS    = {
     "Authorization": f"token {TOKEN}",
     "Accept": "application/vnd.github.v3+json",
