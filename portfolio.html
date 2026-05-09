@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Amarjeet Raj — GitHub Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #060B14;
+    --bg2: #0A1628;
+    --bg3: #0E1F38;
+    --card: #0D1B2E;
+    --border: rgba(0,229,255,0.12);
+    --border2: rgba(0,229,255,0.25);
+    --cyan: #00E5FF;
+    --yellow: #FFEA00;
+    --purple: #7C4DFF;
+    --green: #00E676;
+    --pink: #FF4081;
+    --text: #E8F4FD;
+    --muted: #6B8CAE;
+    --font: 'Space Grotesk', sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font);
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  /* Animated starfield bg */
+  .stars {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle var(--d, 3s) infinite alternate;
+    opacity: 0;
+  }
+  @keyframes twinkle {
+    0% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: var(--op, 0.6); transform: scale(1.2); }
+  }
+
+  /* Animated grid bg */
+  .grid-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image:
+      linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+    z-index: 0;
+    animation: gridShift 20s linear infinite;
+  }
+  @keyframes gridShift {
+    0% { background-position: 0 0; }
+    100% { background-position: 48px 48px; }
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ─── HERO ─────────────────────────────── */
+  .hero {
+    text-align: center;
+    padding: 80px 0 60px;
+    position: relative;
+  }
+  .hero-glow {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px; height: 300px;
+    background: radial-gradient(ellipse at center, rgba(0,229,255,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .avatar-ring {
+    width: 110px; height: 110px;
+    margin: 0 auto 28px;
+    position: relative;
+    display: inline-block;
+  }
+  .avatar-ring svg {
+    position: absolute;
+    top: -8px; left: -8px;
+    width: 126px; height: 126px;
+    animation: rotateSpin 6s linear infinite;
+  }
+  @keyframes rotateSpin { to { transform: rotate(360deg); } }
+  .avatar-inner {
+    width: 110px; height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0A1628, #1a2f4e);
+    border: 2px solid var(--border2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: var(--cyan);
+    text-shadow: 0 0 20px rgba(0,229,255,0.5);
+    letter-spacing: -2px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+  .hero h1 span { color: var(--cyan); }
+
+  .typewriter-wrap {
+    font-family: var(--mono);
+    font-size: 1rem;
+    color: var(--cyan);
+    margin: 16px auto;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .typewriter-wrap::before { content: '>'; color: var(--green); }
+  #typewriter-text { border-right: 2px solid var(--cyan); padding-right: 4px; animation: blink 1s step-end infinite; }
+  @keyframes blink { 50% { border-color: transparent; } }
+
+  .hero-badges {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 28px;
+  }
+  .badge {
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    border: 1px solid;
+    font-family: var(--mono);
+    animation: fadeSlideUp 0.6s both;
+  }
+  .badge.cyan { background: rgba(0,229,255,0.08); border-color: rgba(0,229,255,0.3); color: var(--cyan); }
+  .badge.yellow { background: rgba(255,234,0,0.08); border-color: rgba(255,234,0,0.3); color: var(--yellow); }
+  .badge.purple { background: rgba(124,77,255,0.08); border-color: rgba(124,77,255,0.3); color: var(--purple); }
+  .badge.green { background: rgba(0,230,118,0.08); border-color: rgba(0,230,118,0.3); color: var(--green); }
+
+  @keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ─── SECTION ─── */
+  .section { margin: 56px 0; }
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--cyan);
+    font-family: var(--mono);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border2), transparent);
+  }
+
+  /* ─── ABOUT GRID ─── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media(max-width:640px){ .about-grid { grid-template-columns: 1fr; } }
+  .about-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    transition: border-color 0.3s, transform 0.3s;
+    cursor: default;
+  }
+  .about-card:hover {
+    border-color: var(--border2);
+    transform: translateY(-3px);
+  }
+  .about-card .icon {
+    font-size: 22px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .about-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .about-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ─── STATS DASHBOARD ─── */
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  @media(max-width:640px){ .stats-row { grid-template-columns: repeat(2,1fr); } }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 16px;
+    text-align: center;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent-color, var(--cyan));
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    transform-origin: left;
+  }
+  .stat-card:hover::before { transform: scaleX(1); }
+  .stat-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+  .stat-num {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: var(--accent-color, var(--cyan));
+    line-height: 1;
+    margin-bottom: 6px;
+    display: block;
+  }
+  .stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.5px; }
+
+  /* ─── CONTRIBUTION GRAPH ─── */
+  .contrib-graph {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    overflow-x: auto;
+  }
+  .contrib-title {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 20px;
+    font-family: var(--mono);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .contrib-title .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); display: inline-block; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+  #contribCanvas { display: block; width: 100%; }
+
+  /* ─── LANGUAGE BAR CHART ─── */
+  .lang-bars {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+  }
+  .lang-item {
+    margin-bottom: 18px;
+  }
+  .lang-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+  .lang-name { font-weight: 600; color: var(--text); }
+  .lang-pct { color: var(--muted); font-family: var(--mono); }
+  .lang-track {
+    height: 6px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .lang-fill {
+    height: 100%;
+    border-radius: 100px;
+    width: 0;
+    transition: width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* ─── ACTIVITY TIMELINE ─── */
+  .activity-chart {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+  }
+  #activityCanvas { width: 100%; height: 200px; }
+
+  /* ─── STREAK COUNTER ─── */
+  .streak-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .streak-card::after {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(135deg, var(--cyan), var(--purple), var(--yellow));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    animation: borderSpin 4s linear infinite;
+    background-size: 300% 300%;
+  }
+  @keyframes borderSpin {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  .streak-num {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: var(--mono);
+    color: var(--yellow);
+    display: block;
+    text-shadow: 0 0 30px rgba(255,234,0,0.3);
+  }
+  .streak-label { font-size: 13px; color: var(--muted); margin-top: 8px; font-family: var(--mono); }
+  .streak-fire { font-size: 28px; margin-bottom: 8px; display: block; animation: fireAnim 0.5s alternate infinite; }
+  @keyframes fireAnim { from{transform:scale(1) rotate(-3deg)} to{transform:scale(1.1) rotate(3deg)} }
+
+  /* ─── SKILLS ─── */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 12px;
+  }
+  .skill-chip {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 8px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: default;
+  }
+  .skill-chip:hover {
+    border-color: var(--accent, var(--cyan));
+    background: rgba(0,229,255,0.04);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,229,255,0.08);
+  }
+  .skill-chip .skill-icon { font-size: 22px; display: block; margin-bottom: 7px; }
+  .skill-chip .skill-name { font-size: 11px; color: var(--muted); font-weight: 500; }
+
+  /* ─── PROJECTS ─── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+  }
+  @media(max-width:720px){ .projects-grid { grid-template-columns: 1fr; } }
+  .project-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.35s;
+    position: relative;
+    overflow: hidden;
+  }
+  .project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--proj-color);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .project-card:hover::before { opacity: 1; }
+  .project-card:hover { border-color: var(--border2); transform: translateY(-4px); }
+  .proj-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: var(--proj-bg);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+  }
+  .project-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+  .project-card p { font-size: 12px; color: var(--muted); line-height: 1.7; margin-bottom: 16px; }
+  .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .proj-tag {
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-size: 10px;
+    font-weight: 600;
+    background: rgba(255,255,255,0.05);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    font-family: var(--mono);
+  }
+
+  /* ─── AUTOMATION PANEL ─── */
+  .automation-panel {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .terminal-bar {
+    background: #05080F;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .term-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .term-dot.r { background: #FF5F56; }
+  .term-dot.y { background: #FFBD2E; }
+  .term-dot.g { background: #27C93F; }
+  .terminal-body { padding: 20px; font-family: var(--mono); font-size: 13px; }
+  .term-line {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: termFadeIn 0.3s both;
+  }
+  @keyframes termFadeIn { to { opacity: 1; } }
+  .term-prompt { color: var(--green); flex-shrink: 0; }
+  .term-cmd { color: var(--cyan); }
+  .term-output { color: var(--muted); }
+  .term-success { color: var(--green); }
+  .term-info { color: var(--yellow); }
+
+  /* ─── RADAR CHART ─── */
+  .radar-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ─── CONNECT ─── */
+  .connect-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  .connect-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 22px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  .connect-btn:hover {
+    border-color: var(--btn-color, var(--cyan));
+    background: rgba(0,229,255,0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,229,255,0.1);
+    color: var(--btn-color, var(--cyan));
+  }
+  .connect-btn svg { flex-shrink: 0; }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    text-align: center;
+    padding: 40px 0 0;
+    border-top: 1px solid var(--border);
+    margin-top: 60px;
+  }
+  .footer p { font-size: 12px; color: var(--muted); font-family: var(--mono); }
+  .footer .cyan { color: var(--cyan); }
+
+  /* ─── RADAR SVG GRID ─── */
+  .radar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+  }
+  @media(max-width:640px){ .radar-container { grid-template-columns:1fr; } }
+  .radar-legend { padding-left: 8px; }
+  .radar-legend-item {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+  }
+  .legend-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .legend-bar {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 100px;
+    overflow: hidden;
+  }
+  .legend-fill {
+    height: 100%;
+    border-radius: 100px;
+    width: 0;
+    transition: width 1.4s 0.5s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  /* Layout 2-col for some sections */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width:640px){ .two-col { grid-template-columns:1fr; } }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  @media(max-width:720px){ .three-col { grid-template-columns:1fr; } }
+
+  /* ─── SCROLL REVEAL ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+</style>
+</head>
+<body>
+
+<!-- Starfield -->
+<div class="stars" id="stars"></div>
+<div class="grid-bg"></div>
+
+<div class="content">
+
+  <!-- ─── HERO ─── -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="avatar-ring">
+      <svg viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="63" cy="63" r="58" stroke="rgba(0,229,255,0.15)" stroke-width="1"/>
+        <circle cx="63" cy="63" r="58" stroke="url(#spinGrad)" stroke-width="2" stroke-dasharray="60 300" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="spinGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="126" y2="126">
+            <stop offset="0%" stop-color="#00E5FF"/>
+            <stop offset="100%" stop-color="#7C4DFF"/>
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="avatar-inner">AR</div>
+    </div>
+    <h1>Amarjeet <span>Raj</span></h1>
+    <div class="typewriter-wrap"><span id="typewriter-text"></span></div>
+    <div class="hero-badges">
+      <span class="badge cyan" style="animation-delay:0.1s">🎓 IIIT Dharwad</span>
+      <span class="badge yellow" style="animation-delay:0.2s">⚡ Data Science & AI</span>
+      <span class="badge purple" style="animation-delay:0.3s">🤖 ML Engineer</span>
+      <span class="badge green" style="animation-delay:0.4s">💡 Open to Collabs</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section reveal">
+    <div class="section-title">// about.me</div>
+    <div class="about-grid">
+      <div class="about-card">
+        <span class="icon">🧠</span>
+        <h3>What I Explore</h3>
+        <p>NLP, Reinforcement Learning, and ML systems. I love building intelligent agents that interact with the real world.</p>
+      </div>
+      <div class="about-card">
+        <span class="icon">⚡</span>
+        <h3>Core Strengths</h3>
+        <p>Strong DSA foundations in C++. System design thinking, algorithm optimization, and scalable architectures.</p>
+      </div>
+      <div class="about-card">
+        <span class="icon">🎯</span>
+        <h3>Current Focus</h3>
+        <p>Building real-world AI applications that solve tangible problems — from smart city tools to career intelligence platforms.</p>
+      </div>
+      <div class="about-card">
+        <span class="icon">🚀</span>
+        <h3>2025 Goals</h3>
+        <p>Publish research, contribute to open-source ML projects, and intern at a top AI/tech company.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATS ─── -->
+  <section class="section reveal">
+    <div class="section-title">// github.stats</div>
+    <div class="stats-row">
+      <div class="stat-card" style="--accent-color: var(--cyan)">
+        <span class="stat-num" data-target="42">0</span>
+        <div class="stat-label">Repositories</div>
+      </div>
+      <div class="stat-card" style="--accent-color: var(--yellow)">
+        <span class="stat-num" data-target="1240">0</span>
+        <div class="stat-label">Contributions</div>
+      </div>
+      <div class="stat-card" style="--accent-color: var(--purple)">
+        <span class="stat-num" data-target="28">0</span>
+        <div class="stat-label">Stars Earned</div>
+      </div>
+      <div class="stat-card" style="--accent-color: var(--green)">
+        <span class="stat-num" data-target="16">0</span>
+        <div class="stat-label">PRs Merged</div>
+      </div>
+    </div>
+
+    <!-- Two-col: streak + contribution graph -->
+    <div class="two-col">
+      <div class="streak-card">
+        <span class="streak-fire">🔥</span>
+        <span class="streak-num" id="streakCount">0</span>
+        <div class="streak-label">day streak — keep going</div>
+        <div style="margin-top:16px; font-size:11px; color:var(--muted); font-family:var(--mono)">
+          Best: <span style="color:var(--yellow)">47 days</span> &nbsp;|&nbsp; This month: <span style="color:var(--green)">24 days</span>
+        </div>
+      </div>
+      <div class="contrib-graph">
+        <div class="contrib-title"><span class="dot"></span>Contribution activity — 2025</div>
+        <canvas id="contribCanvas" height="100"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LANGUAGE STATS + RADAR ─── -->
+  <section class="section reveal">
+    <div class="section-title">// skills.proficiency</div>
+    <div class="two-col">
+      <div class="lang-bars">
+        <div style="font-size:13px;color:var(--muted);margin-bottom:20px;font-family:var(--mono)">Top Languages</div>
+        <div class="lang-item">
+          <div class="lang-header"><span class="lang-name">C++</span><span class="lang-pct">52%</span></div>
+          <div class="lang-track"><div class="lang-fill" style="background: var(--cyan)" data-width="52%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-header"><span class="lang-name">Python</span><span class="lang-pct">31%</span></div>
+          <div class="lang-track"><div class="lang-fill" style="background: var(--yellow)" data-width="31%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-header"><span class="lang-name">JavaScript</span><span class="lang-pct">9%</span></div>
+          <div class="lang-track"><div class="lang-fill" style="background: var(--purple)" data-width="9%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-header"><span class="lang-name">Jupyter / Notebooks</span><span class="lang-pct">6%</span></div>
+          <div class="lang-track"><div class="lang-fill" style="background: var(--green)" data-width="6%"></div></div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-header"><span class="lang-name">Other</span><span class="lang-pct">2%</span></div>
+          <div class="lang-track"><div class="lang-fill" style="background: var(--muted)" data-width="2%"></div></div>
+        </div>
+      </div>
+
+      <div class="radar-wrap">
+        <div class="radar-container">
+          <svg id="radarSvg" viewBox="0 0 220 220" width="220" height="220"></svg>
+          <div class="radar-legend" id="radarLegend"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COMMIT ACTIVITY CHART ─── -->
+  <section class="section reveal">
+    <div class="section-title">// commit.activity</div>
+    <div class="activity-chart">
+      <div style="font-size:13px;color:var(--muted);margin-bottom:20px;font-family:var(--mono);display:flex;justify-content:space-between;align-items:center;">
+        <span>Weekly commits — past 12 months</span>
+        <span style="color:var(--cyan)">avg 14 commits/week</span>
+      </div>
+      <canvas id="activityCanvas"></canvas>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section reveal">
+    <div class="section-title">// tech.stack</div>
+    <div class="skills-grid">
+      <div class="skill-chip" style="--accent: #00A8E8"><span class="skill-icon">🟦</span><span class="skill-name">C++</span></div>
+      <div class="skill-chip" style="--accent: #FFD43B"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></div>
+      <div class="skill-chip" style="--accent: #F7DF1E"><span class="skill-icon">🟨</span><span class="skill-name">JavaScript</span></div>
+      <div class="skill-chip" style="--accent: #EE4C2C"><span class="skill-icon">🔥</span><span class="skill-name">PyTorch</span></div>
+      <div class="skill-chip" style="--accent: #FF6F00"><span class="skill-icon">🧠</span><span class="skill-name">TensorFlow</span></div>
+      <div class="skill-chip" style="--accent: #F7931E"><span class="skill-icon">🔬</span><span class="skill-name">Scikit-learn</span></div>
+      <div class="skill-chip" style="--accent: #150458"><span class="skill-icon">🐼</span><span class="skill-name">Pandas</span></div>
+      <div class="skill-chip" style="--accent: #3776AB"><span class="skill-icon">🔢</span><span class="skill-name">NumPy</span></div>
+      <div class="skill-chip" style="--accent: #68A063"><span class="skill-icon">🟩</span><span class="skill-name">Node.js</span></div>
+      <div class="skill-chip" style="--accent: #F05033"><span class="skill-icon">🗂️</span><span class="skill-name">Git</span></div>
+      <div class="skill-chip" style="--accent: #FCC624"><span class="skill-icon">🐧</span><span class="skill-name">Linux</span></div>
+      <div class="skill-chip" style="--accent: #007ACC"><span class="skill-icon">💙</span><span class="skill-name">VS Code</span></div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section reveal">
+    <div class="section-title">// current.builds</div>
+    <div class="projects-grid">
+      <div class="project-card" style="--proj-color: var(--cyan); --proj-bg: rgba(0,229,255,0.08)">
+        <div class="proj-icon">♻️</div>
+        <h3>Smart Garbage Collection</h3>
+        <p>AI-powered route optimization for waste management using RL agents and real-time sensor data.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">Python</span>
+          <span class="proj-tag">RL</span>
+          <span class="proj-tag">IoT</span>
+        </div>
+      </div>
+      <div class="project-card" style="--proj-color: var(--yellow); --proj-bg: rgba(255,234,0,0.08)">
+        <div class="proj-icon">🌱</div>
+        <h3>Decentralized Urban Farming</h3>
+        <p>Distributed platform connecting urban farmers with ML-driven crop yield prediction and resource allocation.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">ML</span>
+          <span class="proj-tag">Node.js</span>
+          <span class="proj-tag">Python</span>
+        </div>
+      </div>
+      <div class="project-card" style="--proj-color: var(--purple); --proj-bg: rgba(124,77,255,0.08)">
+        <div class="proj-icon">🤖</div>
+        <h3>AI Career Tools</h3>
+        <p>Intelligent resume analyser, job match scoring, and interview prep engine powered by NLP models.</p>
+        <div class="proj-tags">
+          <span class="proj-tag">NLP</span>
+          <span class="proj-tag">BERT</span>
+          <span class="proj-tag">FastAPI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── AUTOMATION TERMINAL ─── -->
+  <section class="section reveal">
+    <div class="section-title">// automation.workflows</div>
+    <div class="automation-panel">
+      <div class="terminal-bar">
+        <div class="term-dot r"></div>
+        <div class="term-dot y"></div>
+        <div class="term-dot g"></div>
+        <span style="font-family:var(--mono);font-size:12px;color:var(--muted);margin-left:8px">github-actions · automated-workflow</span>
+        <span style="margin-left:auto;font-size:11px;color:var(--green);font-family:var(--mono)">● RUNNING</span>
+      </div>
+      <div class="terminal-body" id="terminal"></div>
+    </div>
+
+    <!-- Workflow badges -->
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px;">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;font-family:var(--mono);display:flex;align-items:center;gap:8px;">
+        <span style="color:var(--green)">✓</span> <span style="color:var(--muted)">CI/CD Pipeline</span> <span style="color:var(--cyan)">passing</span>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;font-family:var(--mono);display:flex;align-items:center;gap:8px;">
+        <span style="color:var(--green)">✓</span> <span style="color:var(--muted)">Auto README Update</span> <span style="color:var(--cyan)">enabled</span>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;font-family:var(--mono);display:flex;align-items:center;gap:8px;">
+        <span style="color:var(--yellow)">⟳</span> <span style="color:var(--muted)">Stats Refresh</span> <span style="color:var(--yellow)">every 6h</span>
+      </div>
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:12px;font-family:var(--mono);display:flex;align-items:center;gap:8px;">
+        <span style="color:var(--purple)">⬡</span> <span style="color:var(--muted)">Bot Commits</span> <span style="color:var(--purple)">active</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONNECT ─── -->
+  <section class="section reveal">
+    <div class="section-title">// get.in.touch</div>
+    <div class="connect-row">
+      <a class="connect-btn" href="https://linkedin.com/in/amarjeet-raj" style="--btn-color:#0A66C2">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        LinkedIn
+      </a>
+      <a class="connect-btn" href="mailto:23bds006@iiitdwd.ac.in" style="--btn-color:#FF3D00">
+        <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        Email
+      </a>
+      <a class="connect-btn" href="https://github.com/Amarjeetiiitd" style="--btn-color:#fff">
+        <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <p>Built with <span class="cyan">❤</span> and <span class="cyan">caffeine</span> — <span class="cyan">@Amarjeetiiitd</span> · Auto-updated via GitHub Actions</p>
+    <p style="margin-top:8px">Last synced: <span class="cyan" id="lastSync"></span></p>
+  </footer>
+
+</div>
+
+<script>
+// ─── STARS ───
+const stars = document.getElementById('stars');
+for(let i=0;i<120;i++){
+  const s=document.createElement('div');
+  s.className='star';
+  const size=Math.random()*2+0.5;
+  s.style.cssText=`
+    width:${size}px;height:${size}px;
+    top:${Math.random()*100}%;left:${Math.random()*100}%;
+    --d:${Math.random()*4+1.5}s;
+    --op:${Math.random()*0.5+0.1};
+    animation-delay:${Math.random()*5}s;
+  `;
+  stars.appendChild(s);
+}
+
+// ─── TYPEWRITER ───
+const phrases=['Data Science & AI Student','ML Engineer in Progress','DSA Problem Solver','AI Systems Builder','NLP Researcher'];
+let pi=0,ci=0,deleting=false;
+const el=document.getElementById('typewriter-text');
+function typeWrite(){
+  const phrase=phrases[pi];
+  if(!deleting){
+    el.textContent=phrase.slice(0,ci+1);
+    ci++;
+    if(ci===phrase.length){deleting=true;setTimeout(typeWrite,1800);return;}
+  }else{
+    el.textContent=phrase.slice(0,ci-1);
+    ci--;
+    if(ci===0){deleting=false;pi=(pi+1)%phrases.length;}
+  }
+  setTimeout(typeWrite,deleting?50:90);
+}
+typeWrite();
+
+// ─── COUNTER ANIM ───
+function animateCounter(el,target,duration=1800){
+  const start=performance.now();
+  function step(now){
+    const p=Math.min((now-start)/duration,1);
+    const ease=1-Math.pow(1-p,3);
+    el.textContent=Math.round(ease*target).toLocaleString();
+    if(p<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// Streak
+const streakEl=document.getElementById('streakCount');
+function animStreak(){animateCounter(streakEl,31,1200);}
+
+// ─── CONTRIBUTION HEATMAP (canvas) ───
+function drawContrib(){
+  const canvas=document.getElementById('contribCanvas');
+  const ctx=canvas.getContext('2d');
+  const W=canvas.offsetWidth||700;
+  canvas.width=W*2;canvas.height=200;
+  canvas.style.height='100px';
+  ctx.scale(2,2);
+  const cols=52,rows=7,cellSize=11,gap=2,ox=0,oy=0;
+  const total=cols*rows;
+  for(let c=0;c<cols;c++){
+    for(let r=0;r<rows;r++){
+      const val=Math.random();
+      let color;
+      if(val<0.35) color='rgba(255,255,255,0.04)';
+      else if(val<0.55) color='rgba(0,229,255,0.15)';
+      else if(val<0.72) color='rgba(0,229,255,0.35)';
+      else if(val<0.87) color='rgba(0,229,255,0.6)';
+      else color='rgba(0,229,255,0.9)';
+      ctx.fillStyle=color;
+      ctx.beginPath();
+      const x=ox+c*(cellSize+gap),y=oy+r*(cellSize+gap);
+      ctx.roundRect(x,y,cellSize,cellSize,2);
+      ctx.fill();
+    }
+  }
+}
+
+// ─── ACTIVITY BAR CHART (canvas) ───
+function drawActivity(){
+  const canvas=document.getElementById('activityCanvas');
+  const ctx=canvas.getContext('2d');
+  const W=canvas.offsetWidth||700;
+  canvas.width=W*2;canvas.height=400;
+  ctx.scale(2,2);
+  const H=200;
+  const weeks=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const vals=[8,12,6,18,22,15,9,25,19,14,28,16];
+  const max=Math.max(...vals);
+  const barW=Math.floor((W-60)/weeks.length)-6;
+  const ox=30,oy=10,chartH=H-40;
+
+  // Grid lines
+  for(let i=0;i<=4;i++){
+    const y=oy+chartH-(i/4)*chartH;
+    ctx.strokeStyle='rgba(255,255,255,0.05)';
+    ctx.lineWidth=1;
+    ctx.beginPath();ctx.moveTo(ox,y);ctx.lineTo(W-10,y);ctx.stroke();
+    ctx.fillStyle='rgba(107,140,174,0.7)';
+    ctx.font='10px JetBrains Mono, monospace';
+    ctx.textAlign='right';
+    ctx.fillText(Math.round(i/4*max*1.1),ox-4,y+3);
+  }
+
+  // Bars
+  vals.forEach((v,i)=>{
+    const barH=(v/max)*chartH;
+    const x=ox+(i*(barW+6));
+    const y=oy+chartH-barH;
+    const grad=ctx.createLinearGradient(x,y,x,y+barH);
+    grad.addColorStop(0,'rgba(0,229,255,0.9)');
+    grad.addColorStop(1,'rgba(124,77,255,0.4)');
+    ctx.fillStyle=grad;
+    ctx.beginPath();
+    ctx.roundRect(x,y,barW,barH,3);
+    ctx.fill();
+    // label
+    ctx.fillStyle='rgba(107,140,174,0.8)';
+    ctx.textAlign='center';
+    ctx.font='9px JetBrains Mono, monospace';
+    ctx.fillText(weeks[i],x+barW/2,oy+chartH+14);
+  });
+}
+
+// ─── RADAR CHART (SVG) ───
+function drawRadar(){
+  const svg=document.getElementById('radarSvg');
+  const skills=[
+    {name:'DSA / C++',val:0.88,color:'#00E5FF'},
+    {name:'Machine Learning',val:0.78,color:'#7C4DFF'},
+    {name:'Python',val:0.82,color:'#FFEA00'},
+    {name:'NLP',val:0.65,color:'#00E676'},
+    {name:'System Design',val:0.70,color:'#FF4081'},
+    {name:'Deep Learning',val:0.60,color:'#FF9100'},
+  ];
+  const cx=110,cy=110,R=85,n=skills.length;
+  let html='';
+  // Grid rings
+  [0.25,0.5,0.75,1].forEach(r=>{
+    const pts=skills.map((_,i)=>{
+      const a=i*(2*Math.PI/n)-Math.PI/2;
+      return [cx+R*r*Math.cos(a),cy+R*r*Math.sin(a)];
+    });
+    html+=`<polygon points="${pts.map(p=>p.join(',')).join(' ')}" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>`;
+  });
+  // Spokes
+  skills.forEach((_,i)=>{
+    const a=i*(2*Math.PI/n)-Math.PI/2;
+    html+=`<line x1="${cx}" y1="${cy}" x2="${cx+R*Math.cos(a)}" y2="${cy+R*Math.sin(a)}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>`;
+  });
+  // Data polygon
+  const dpts=skills.map((s,i)=>{
+    const a=i*(2*Math.PI/n)-Math.PI/2;
+    return [cx+R*s.val*Math.cos(a),cy+R*s.val*Math.sin(a)];
+  });
+  html+=`<polygon points="${dpts.map(p=>p.join(',')).join(' ')}" fill="rgba(0,229,255,0.08)" stroke="rgba(0,229,255,0.5)" stroke-width="1.5"/>`;
+  // Dots
+  dpts.forEach((p,i)=>{
+    html+=`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="${skills[i].color}" stroke="rgba(0,0,0,0.5)" stroke-width="1"/>`;
+  });
+  svg.innerHTML=html;
+
+  // Legend
+  const legend=document.getElementById('radarLegend');
+  legend.innerHTML=skills.map(s=>`
+    <div class="radar-legend-item">
+      <div class="legend-dot" style="background:${s.color}"></div>
+      <span style="font-size:12px;color:var(--muted);flex:0 0 100px">${s.name}</span>
+      <div class="legend-bar">
+        <div class="legend-fill" style="background:${s.color}" data-width="${s.val*100}%"></div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ─── TERMINAL ANIMATION ───
+const termLines=[
+  {type:'cmd', text:'git push origin main'},
+  {type:'output', text:'Enumerating objects: 5, done.'},
+  {type:'output', text:'Counting objects: 100% (5/5), done.'},
+  {type:'success', text:'✓  remote: Resolving deltas: 100% (2/2)'},
+  {type:'cmd', text:'gh workflow run update-readme.yml'},
+  {type:'success', text:'✓  Triggered workflow run'},
+  {type:'cmd', text:'python scripts/gen_stats.py --auto'},
+  {type:'info', text:'⟳  Fetching GitHub API...'},
+  {type:'success', text:'✓  Stats updated: 1,240 contributions'},
+  {type:'success', text:'✓  Streak: 31 days 🔥'},
+  {type:'cmd', text:'git add README.md && git commit -m "bot: auto-update stats [skip ci]"'},
+  {type:'success', text:'✓  [main 3fa7c91] bot: auto-update stats'},
+];
+const termEl=document.getElementById('terminal');
+function renderTermLines(lines){
+  termEl.innerHTML=lines.map((l,i)=>{
+    let cls='term-output',pre='';
+    if(l.type==='cmd'){cls='term-cmd';pre='<span class="term-prompt">$ </span>';}
+    else if(l.type==='success') cls='term-success';
+    else if(l.type==='info') cls='term-info';
+    return `<div class="term-line" style="animation-delay:${i*0.12}s"><span class="${cls}">${pre}${l.text}</span></div>`;
+  }).join('');
+}
+renderTermLines(termLines);
+
+// ─── SCROLL REVEAL + TRIGGER ANIMATIONS ───
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.classList.add('visible');
+      // Trigger bar fills
+      e.target.querySelectorAll('.lang-fill,.legend-fill').forEach(el=>{
+        el.style.width=el.dataset.width;
+      });
+      // Trigger counters
+      e.target.querySelectorAll('[data-target]').forEach(el=>{
+        animateCounter(el,+el.dataset.target);
+      });
+      // Streak
+      if(e.target.querySelector('#streakCount')) animStreak();
+    }
+  });
+},{threshold:0.15});
+reveals.forEach(r=>observer.observe(r));
+
+// ─── INIT CANVAS ELEMENTS ───
+window.addEventListener('load',()=>{
+  drawContrib();
+  drawActivity();
+  drawRadar();
+  document.getElementById('lastSync').textContent=
+    new Date().toLocaleString('en-IN',{timeZone:'Asia/Kolkata',month:'short',day:'2-digit',hour:'2-digit',minute:'2-digit'});
+});
+window.addEventListener('resize',()=>{
+  drawContrib();
+  drawActivity();
+});
+</script>
+</body>
+</html>

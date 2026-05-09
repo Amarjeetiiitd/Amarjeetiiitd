@@ -1,0 +1,42 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # manual trigger from GitHub UI
+  push:
+    branches: [main]
+    paths-ignore:
+      - "README.md"           # don't loop when bot commits README
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write         # needed to push the updated README
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run stats updater
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python scripts/update_readme.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "bot: auto-update stats [skip ci]"
+          git push
