@@ -17,6 +17,35 @@
 ## 📊 Live Stats (auto-updated every 6 hours)
 
 <!-- DYNAMIC_STATS_START -->
+| 📦 Stat | 🔢 Count |
+|---------|---------|
+| Public Repos | **10** |
+| Private Repos | **3** |
+| Total Repos | **13** |
+| ⭐ Total Stars | **0** |
+| 🍴 Total Forks | **0** |
+| 🔀 Total PRs (this year) | **0** |
+| 🐛 Issues Opened (this year) | **0** |
+| 🏆 Contributions (this year) | **55** |
+| 💻 Commits (this year) | **44** |
+| 🔥 Current Streak | **4 days** |
+| 👥 Followers | **0** |
+| 👣 Following | **0** |
+| 👁️ Profile Views (14d) | **0** |
+| 🌐 Unique Visitors (14d) | **0** |
+
+**Top Languages (by bytes across all repos):**
+
+| Language | % |
+|----------|---|
+| JavaScript | 52.9% |
+| Python | 36.7% |
+| HTML | 6.8% |
+| CSS | 3.3% |
+| Dockerfile | 0.1% |
+| Mako | 0.1% |
+
+*Last updated: 09 May 2026 03:31 UTC*
 <!-- DYNAMIC_STATS_END -->
 
 ## 🛠️ Skills
