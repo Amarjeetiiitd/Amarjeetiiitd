@@ -20,7 +20,7 @@
 | 🤖 | Exploring NLP, Reinforcement Learning & ML |
 | ⚡ | Strong in DSA using C++ |
 | 🎯 | Building scalable, real-world AI systems |
-| 🔥 | Current Streak: **0 days** |
+| 🔥 | Current Streak: **3 days** |
 
 ---
 
@@ -138,6 +138,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1628,100:00E5FF&height=100&section=footer" width="100%"/>
 
-*🤖 README & SVG stats auto-updated every 6 hours via [GitHub Actions](https://github.com/Amarjeetiiitd/Amarjeetiiitd/actions) · Last sync: 30 May 2026 · 18:57 UTC*
+*🤖 README & SVG stats auto-updated every 6 hours via [GitHub Actions](https://github.com/Amarjeetiiitd/Amarjeetiiitd/actions) · Last sync: 31 May 2026 · 02:13 UTC*
 
 </div>
