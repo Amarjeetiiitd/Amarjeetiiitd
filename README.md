@@ -191,7 +191,7 @@
 
 ## 🎓 Education & Background
 
-**🎓 IIIT Dharwad** (2023-2025)
+**🎓 IIIT Dharwad** (2023-2027)
 - Specialization: Data Science & AI
 - Focus: Machine Learning, NLP & Deep Learning
 - Core Skills: Advanced DSA, ML Systems, AI Architecture
