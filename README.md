@@ -2,9 +2,9 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&height=300&section=header&text=Amarjeet%20Raj&fontSize=90&fontColor=58A6FF&animation=fadeIn&color=0:0D1117,50:1C2128,100:161B22" width="100%"/>
 
-<h2 style="color: #58A6FF; margin: 20px 0; font-size: 28px;">🚀 Full Stack AI Developer</h2>
+<h2 style="color: #58A6FF; margin: 20px 0; font-size: 28px;">🚀 ML Engineer</h2>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&height=50&lines=Building+intelligent+and+scalable+solutions;Mastering+Data+Science+%26+Machine+Learning;Expert+in+DSA+%26+System+Design;Passionate+about+Real-world+AI+Systems" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&height=50&lines=Building+intelligent+machine+learning+systems;Mastering+Data+Science+%26+NLP;Expert+in+Deep+Learning+%26+System+Design;Passionate+about+AI+Solutions" alt="Typing SVG" />
 
 <br/>
 
@@ -20,101 +20,92 @@
 
 <div align="center">
 
-## 🚀 TECH STACK OVERVIEW
+# 🚀 TECH STACK OVERVIEW
 
 **A visual breakdown of my technical expertise**
 
 </div>
 
-<table align="center" width="100%">
-<tr>
-<td width="50%" align="center">
-
-### 🔵 LANGUAGES
-
+### **Languages Distribution**
 ```
-Python        40% ███████████████░░░░░
-JavaScript    25% ██████████░░░░░░░░░░
-C++           15% ██████░░░░░░░░░░░░░░
-SQL           10% ████░░░░░░░░░░░░░░░░
-Others        10% ████░░░░░░░░░░░░░░░░
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🔵 Python          50%  ████████████████████░░░░░░░░░░░░  │
+│  🟡 JavaScript      20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░  │
+│  🔴 C++             15%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░  │
+│  🟢 SQL             10%  ████░░░░��░░░░░░░░░░░░░░░░░░░░░░░  │
+│  ⚪ Others           5%  ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
-
-</td>
-<td width="50%" align="center">
-
-### 🟢 WEB & BACKEND
-
-```
-Node.js       30% ██████████░░░░░░░░░░
-FastAPI       25% █████████░░░░░░░░░░░
-Express       25% █████████░░░░░░░░░░░
-MongoDB       20% ████████░░░░░░░░░░░░
-```
-
-</td>
-</tr>
-</table>
 
 ---
 
-<table align="center" width="100%">
-<tr>
-<td width="50%" align="center">
-
-### 🟣 AI & MACHINE LEARNING
-
+### **AI & Machine Learning Expertise**
 ```
-PyTorch       35% █████████████░░░░░░░
-TensorFlow    30% ████████████░░░░░░░░
-Scikit-Learn  20% ████████░░░░░░░░░░░░
-NLP           15% ██████░░░░░░░░░░░░░░
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🟣 PyTorch         40%  ████████████████░░░░░░░░░░░░░░   │
+│  🟠 TensorFlow      25%  ██████████░░░░░░░░░░░░░░░░░░░░░  │
+│  🟡 Scikit-Learn    20%  ████████░░░░░░░░░░░░░░░░░░░░░░░ │
+│  🔵 NLP/BERT        15%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
-
-</td>
-<td width="50%" align="center">
-
-### 🟨 DEVOPS & TOOLS
-
-```
-Git           25% █████████░░░░░░░░░░░
-Docker        25% █████████░░░░░░░░░░░
-Linux         25% █████████░░░░░░░░░░░
-VS Code       25% █████████░░░░░░░░░░░
-```
-
-</td>
-</tr>
-</table>
 
 ---
 
-<table align="center" width="100%">
-<tr>
-<td width="50%" align="center">
-
-### 🔴 DATA SCIENCE
-
+### **Data Science Stack**
 ```
-Pandas        40% ███████████████░░░░░
-NumPy         30% ████████████░░░░░░░░
-Jupyter       30% ████████████░░░░░░░░
-```
-
-</td>
-<td width="50%" align="center">
-
-### 🔵 DATABASES
-
-```
-MongoDB       40% ███████████████░░░░░
-PostgreSQL    30% ████████████░░░░░░░░
-MySQL         30% ████████████░░░░░░░░
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🔴 Pandas          45%  ██████████████████░░░░░░░░░░░░░░  │
+│  🟢 NumPy           35%  ██████████████░░░░░░░░░░░░░░░░░░  │
+│  🔵 Jupyter         20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
 ```
 
-</td>
-</tr>
-</table>
+---
+
+### **Backend & APIs**
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🟢 FastAPI         35%  ██████████████░░░░░░░░░░░░░░░░░░  │
+│  🔵 Node.js         30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
+│  ⬛ Express         20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░ │
+│  🟨 Flask           15%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### **DevOps & Tools**
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🐋 Docker          30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
+│  🐧 Linux           25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
+│  🟠 Git             25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
+│  🔷 VS Code         20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+### **Databases & Storage**
+```
+┌─────────────────────────────────────────────────────────────┐
+│                                                             │
+│  🟨 MongoDB         40%  ████████████████░░░░░░░░░░░░░░   │
+│  🟪 PostgreSQL      35%  ██████████████░░░░░░░░░░░░░░░░░░ │
+│  🔵 MySQL           25%  ██████████░░░░░░░░░░░░░░░░░░░░░░ │
+│                                                             │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -122,9 +113,9 @@ MySQL         30% ████████████░░░░░░░░
 
 ## 📊 PROFICIENCY LEVEL
 
-| **Backend** | **AI/ML** | **Data Science** | **DevOps** | **Frontend** |
+| **Backend** | **AI/ML** | **Data Science** | **DevOps** | **NLP** |
 |:---:|:---:|:---:|:---:|:---:|
-| 🔵 90% | 🟣 85% | 🔴 80% | 🟨 75% | 🔵 70% |
+| 🔵 85% | 🟣 90% | 🔴 85% | 🟨 70% | 🔵 80% |
 
 </div>
 
@@ -136,10 +127,10 @@ MySQL         30% ████████████░░░░░░░░
 
 | Icon | Feature | Description |
 |:---:|:---|:---|
-| 🚀 | **Always Learning** | Exploring new technologies and best practices in AI/ML landscape |
-| 🎯 | **Problem Solver** | Building efficient, scalable solutions to complex problems |
-| ⚡ | **Performance Focused** | Writing optimized and production-ready code |
-| ✅ | **Clean & Maintainable** | Following SOLID principles and clean code standards |
+| 🚀 | **Always Learning** | Exploring cutting-edge ML architectures, LLMs, and AI innovations |
+| 🎯 | **Problem Solver** | Building efficient ML solutions to complex real-world problems |
+| ⚡ | **Performance Focused** | Optimizing models for speed, accuracy, and production deployment |
+| ✅ | **Clean & Maintainable** | Following ML best practices and clean code standards |
 
 </div>
 
@@ -152,10 +143,10 @@ MySQL         30% ████████████░░░░░░░░
 | Project | Description | Tech Stack |
 |:---:|:---|:---|
 | **🤖 Campus Chat** | P2P communication with video/audio/screen sharing | JavaScript, WebRTC, Node.js |
-| **♻️ AI Job Shortlisting** | Resume analyzer & candidate ranking system | Python, Spark, ML |
-| **📚 Course Management** | Full-stack course management platform | JavaScript, Node.js, MongoDB |
+| **♻️ AI Job Shortlisting** | Resume analyzer & candidate ranking using ML | Python, Spark, ML Models |
+| **📚 Course Management** | Full-stack course platform | JavaScript, Node.js, MongoDB |
 | **🛑 Incident Management** | Real-time incident tracking system | JavaScript, Express, MongoDB |
-| **🧠 NLP Projects** | Grammar evaluation & response analysis | Python, NLP, NLTK |
+| **🧠 NLP Projects** | Grammar evaluation & response analysis | Python, NLP, NLTK, BERT |
 
 </div>
 
@@ -174,8 +165,8 @@ MySQL         30% ████████████░░░░░░░░
    ├─ Job-profile matching engine
    └─ Interview preparation AI
 
-🔄 Advanced ML Research
-   └─ Exploring cutting-edge AI architectures & LLMs
+🔬 Advanced ML Research
+   └─ Exploring LLMs, Computer Vision & Production ML Systems
 ```
 
 </div>
@@ -190,7 +181,7 @@ MySQL         30% ████████████░░░░░░░░
 - 12+ Public Projects
 - Consistent Contributor
 - Open to Collaborations
-- Problem Solver & Builder
+- ML & AI Enthusiast
 
 </div>
 
@@ -202,8 +193,8 @@ MySQL         30% ████████████░░░░░░░░
 
 **🎓 IIIT Dharwad** (2023-2025)
 - Specialization: Data Science & AI
-- Focus: Machine Learning, NLP & Reinforcement Learning
-- Core Skills: Advanced DSA, System Design, AI Architecture
+- Focus: Machine Learning, NLP & Deep Learning
+- Core Skills: Advanced DSA, ML Systems, AI Architecture
 
 </div>
 
@@ -213,7 +204,7 @@ MySQL         30% ████████████░░░░░░░░
 
 ## 🌟 Let's Connect!
 
-I'm passionate about building **intelligent systems**, solving **real-world problems**, and collaborating on **cutting-edge AI projects**.
+I'm passionate about building **intelligent ML systems**, solving **real-world problems**, and collaborating on **cutting-edge AI projects**.
 
 <br/>
 
@@ -232,6 +223,6 @@ I'm passionate about building **intelligent systems**, solving **real-world prob
 
 <sub>⭐ If you find my work interesting, consider giving it a star!</sub>
 
-*✨ Profile curated with design precision • Built with 💙 and ☕*
+*✨ ML Engineer Profile • Built with 💙 and ☕*
 
 </div>
