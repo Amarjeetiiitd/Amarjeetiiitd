@@ -1,251 +1,134 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=300&section=header&text=Amarjeet%20Raj&fontSize=90&fontColor=58A6FF&animation=fadeIn&color=0:0D1117,50:1C2128,100:161B22" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=200&section=header&text=Amarjeet%20Raj&fontSize=50&fontColor=00E5FF&animation=fadeIn&color=0:060B14,100:0A1628" width="100%"/>
 
-<h2 style="color: #58A6FF; margin: 20px 0; font-size: 28px;">🚀 Full Stack AI Developer</h2>
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=20&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=700&lines=Data+Science+%26+AI+%40+IIIT+Dharwad;Machine+Learning+Engineer+in+Progress;NLP+%7C+Reinforcement+Learning+%7C+DSA;Building+Real-World+AI+Systems" />
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=16&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=900&height=50&lines=Building+intelligent+and+scalable+solutions;Mastering+Data+Science+%26+Machine+Learning;Expert+in+DSA+%26+System+Design;Passionate+about+Real-world+AI+Systems" alt="Typing SVG" />
-
-<br/>
-
-<a href="https://github.com/Amarjeetiiitd"><img src="https://img.shields.io/github/followers/Amarjeetiiitd?label=Followers&style=flat-square&color=58A6FF&logo=github" alt="GitHub Followers" /></a>
+[![Profile Views](https://komarev.com/ghpvc/?username=Amarjeetiiitd&color=00e5ff&style=flat-square&label=Profile+Views)](https://github.com/Amarjeetiiitd)
 &nbsp;
-<a href="https://linkedin.com/in/amarjeet-raj"><img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn" /></a>
+[![GitHub followers](https://img.shields.io/github/followers/Amarjeetiiitd?color=00E5FF&style=flat-square&logo=github&label=Followers)](https://github.com/Amarjeetiiitd)
+
+</div>
+
+---
+
+## 🚀 About Me
+
+| | |
+|---|---|
+| 🎓 | Data Science & AI @ IIIT Dharwad |
+| 🤖 | Exploring NLP, Reinforcement Learning & ML |
+| ⚡ | Strong in DSA using C++ |
+| 🎯 | Building scalable, real-world AI systems |
+| 🔥 | Current Streak: **1 days** |
+
+---
+
+## 📊 Live Stats
+
+<div align="center">
+
+![Stats](assets/stats.svg)
+
+</div>
+
+---
+
+## 🌱 Contribution Heatmap
+
+<div align="center">
+
+![Heatmap](assets/heatmap.svg)
+
+</div>
+
+---
+
+## 🏆 GitHub Trophies
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=Amarjeetiiitd&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+---
+
+## 📈 Activity Graph
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Amarjeetiiitd&theme=tokyo-night&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+---
+
+## 💻 Top Languages
+
+<div align="center">
+
+![Languages](assets/langs.svg)
+
+</div>
+
+---
+
+## 🔥 Streak & Stats Cards
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Amarjeetiiitd&theme=tokyonight&hide_border=true&ring=00E5FF&fire=FFEA00&currStreakNum=00E5FF" height="165"/>
 &nbsp;
-<a href="mailto:23bds006@iiitdwd.ac.in"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=flat-square&logo=gmail" alt="Email" /></a>
+<img src="https://github-readme-stats.vercel.app/api?username=Amarjeetiiitd&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&title_color=00E5FF&icon_color=7C4DFF" height="165"/>
 
 </div>
 
 ---
 
-## 🎯 TECH STACK OVERVIEW
+## 🛠️ Tech Stack
 
 <div align="center">
 
-**A visual breakdown of my technical expertise**
-
-</div>
-
-### **Languages Distribution**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🔵 Python          40%  ████████████████░░░░░░░░░░░░░░   │
-│  🟡 JavaScript      25%  ██████████░░░░░░░░░░░░░░░░░░░░░   │
-│  🔴 C++             15%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░  │
-│  🟢 SQL             10%  ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  │
-│  ⚪ Others          10%  ████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-### **AI & Machine Learning Expertise**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🟣 PyTorch         35%  ██████████████░░░░░░░░░░░░░░░░░░  │
-│  🟠 TensorFlow      30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│  🟡 Scikit-Learn    20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░ │
-│  🔵 NLP             15%  ██████░░░░░░░░░░░░░░░░░░░░░░░░░░  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-### **Data Science Stack**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🔴 Pandas          40%  ████████████████░░░░░░░░░░░░░░   │
-│  🟢 NumPy           30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│  🔵 Jupyter         30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-### **Web & Backend Technologies**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🟢 Node.js         30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│  🟦 FastAPI         25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│  ⬛ Express         25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│  🟨 MongoDB         20%  ████████░░░░░░░░░░░░░░░░░░░░░░░░ │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-### **DevOps & Development Tools**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🟠 Git             25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│  🐋 Docker          25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│  🐧 Linux           25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│  🔷 VS Code         25%  ██████████░░░░░░░░░░░░░░░░░░░░░░  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-### **Databases & Storage**
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  🟨 MongoDB         40%  ████████████████░░░░░░░░░░░░░░   │
-│  🟪 PostgreSQL      30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│  🔵 MySQL           30%  ████████████░░░░░░░░░░░░░░░░░░░░  │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## 📊 PROFICIENCY LEVEL
-
-<div align="center">
-
-| **Backend** | **AI/ML** | **Data Science** | **DevOps** | **Frontend** |
-|:---:|:---:|:---:|:---:|:---:|
-| ![90%](https://img.shields.io/badge/90%25-58A6FF?style=flat-square&labelColor=0D1117) | ![85%](https://img.shields.io/badge/85%25-7C3AED?style=flat-square&labelColor=0D1117) | ![80%](https://img.shields.io/badge/80%25-FF6B6B?style=flat-square&labelColor=0D1117) | ![75%](https://img.shields.io/badge/75%25-FFB612?style=flat-square&labelColor=0D1117) | ![70%](https://img.shields.io/badge/70%25-22D3EE?style=flat-square&labelColor=0D1117) |
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 </div>
 
 ---
 
-## ⭐ TECHNOLOGY HIGHLIGHTS
+## 🏗️ What I'm Building
 
 <div align="center">
 
-| 🚀 | **Always Learning** |
-|---|---|
-| | Exploring new technologies, frameworks, and best practices to stay ahead in the AI/ML landscape |
-
-| 🎯 | **Problem Solver** |
-|---|---|
-| | Building efficient, scalable solutions to complex problems using modern algorithms and architectures |
-
-| ⚡ | **Performance Focused** |
-|---|---|
-| | Writing optimized, production-ready code with emphasis on speed, memory efficiency, and scalability |
-
-| ✅ | **Clean & Maintainable** |
-|---|---|
-| | Following SOLID principles, clean code standards, and best practices for long-term maintainability |
+| 🚀 Project | 📝 Description | 🛠️ Stack |
+|-----------|---------------|---------|
+| ♻️ **Smart Garbage Collection** | AI-powered route optimization for waste management using RL agents | Python · RL · IoT |
+| 🌱 **Decentralized Urban Farming** | ML-driven crop yield prediction & distributed resource allocation | ML · Node.js · Python |
+| 🤖 **AI Career Tools** | Resume analyser + job match scoring + interview prep via NLP | NLP · BERT · FastAPI |
 
 </div>
 
 ---
 
-## 🚀 Featured Projects
+## 🔗 Connect
 
 <div align="center">
-
-| Project | Description | Tech Stack | Status |
-|:---:|:---|:---|:---:|
-| **🤖 Campus Chat** | P2P communication with video/audio/screen sharing over local networks without internet dependency | JavaScript, WebRTC, Node.js | ✅ Active |
-| **♻️ AI Job Shortlisting** | Resume analyzer and candidate ranking system using Apache Spark and AI models | Python, Spark, Machine Learning | ✅ Active |
-| **📚 Course Management** | Full-stack course management system with real-time updates and user dashboard | JavaScript, Node.js, MongoDB | ✅ Active |
-| **🛑 Incident Management** | Real-time incident tracking and resolution platform for enterprises | JavaScript, Express, MongoDB | ✅ Active |
-| **🧠 NLP Projects** | Grammar coverage evaluation and response analysis using advanced NLP techniques | Python, NLP, NLTK | ✅ Active |
-
-</div>
-
----
-
-## 💼 What I'm Currently Building
-
-<div align="center">
-
-```
-🔬 Active Initiatives
-
-🌱 Decentralized Urban Farming Platform
-   └─ ML-driven crop yield prediction & resource allocation
-
-💼 AI Career Tools Suite
-   ├─ Resume analyzer with BERT NLP
-   ├─ Job-profile matching engine
-   └─ Interview preparation AI
-
-🔄 Advanced ML Research
-   └─ Exploring cutting-edge AI architectures & LLMs
-
-📊 Real-time Analytics Engine
-   └─ Building scalable data pipelines with Apache Spark
-```
-
-</div>
-
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-| Contribution Insights | Streak Stats |
-|:---:|:---:|
-| [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Amarjeetiiitd&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true&bg_color=0D1117&title_color=58A6FF&text_color=F0F6FC&icon_color=58A6FF)](https://github.com/Amarjeetiiitd) | [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Amarjeetiiitd&theme=dark&hide_border=true&background=0D1117&ring=58A6FF&fire=FF6B6B&currStreakNum=58A6FF)](https://github.com/Amarjeetiiitd) |
-
-<br/>
-
-### 🎨 Language Distribution
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Amarjeetiiitd&theme=github_dark&hide_border=true&layout=compact&bg_color=0D1117&title_color=58A6FF&text_color=F0F6FC)](https://github.com/Amarjeetiiitd)
-
-<br/>
-
-### 📈 Activity Timeline
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Amarjeetiiitd&theme=github-dark&hide_border=true&bg_color=0D1117&color=58A6FF&line=58A6FF&point=7C3AED)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
-</div>
-
----
-
-## 🏆 Achievements & Recognition
-
-<div align="center">
-
-[![GitHub Trophy](https://github-profile-trophy.vercel.app/?username=Amarjeetiiitd&theme=dark&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-## 🎓 Education & Background
-
-<div align="center">
-
-**🎓 IIIT Dharwad** (2023-2025)
-- Specialization: Data Science & AI
-- Focus: Machine Learning, NLP & Reinforcement Learning
-- Core Skills: Advanced DSA, System Design, AI Architecture
-
-</div>
-
----
-
-## 🌟 Let's Connect!
-
-<div align="center">
-
-I'm passionate about building **intelligent systems**, solving **real-world problems**, and collaborating on **cutting-edge AI projects**.
-
-<br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/amarjeet-raj)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:23bds006@iiitdwd.ac.in)
+[![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:23bds006@iiitdwd.ac.in)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Amarjeetiiitd)
-[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://Amarjeetiiitd.github.io/Amarjeetiiitd/portfolio.html)
+[![Portfolio](https://img.shields.io/badge/Portfolio-00E5FF?style=for-the-badge&logo=google-chrome&logoColor=black)](https://Amarjeetiiitd.github.io/Amarjeetiiitd/portfolio.html)
 
 </div>
 
@@ -253,10 +136,8 @@ I'm passionate about building **intelligent systems**, solving **real-world prob
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:161B22,100:0D1117&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A1628,100:00E5FF&height=100&section=footer" width="100%"/>
 
-<sub>⭐ If you find my work interesting, consider giving it a star! It motivates me to build more amazing projects.</sub>
-
-*✨ Profile curated with design precision • Built with 💙 and ☕*
+*🤖 README & SVG stats auto-updated every 6 hours via [GitHub Actions](https://github.com/Amarjeetiiitd/Amarjeetiiitd/actions) · Last sync: 06 Jul 2026 · 14:54 UTC*
 
 </div>
