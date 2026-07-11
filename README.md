@@ -31,25 +31,25 @@ Others         5% ██░░░░░░░░░░░░░░░░░░�
 
 ## AI & Machine Learning
 ```
-PyTorch       40% ████████████████░░░░░░░░░░░░░░░░░
-TensorFlow    25% ██████████░░░░░░░░░░░░░░░░░░░░░░░
-Scikit-Learn  20% ████████░░░░░░░░░░░░░░░░░░░░░░░░░
-NLP/BERT      15% ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░
+PyTorch       40% ████████████████
+TensorFlow    25% ██████████
+Scikit-Learn  20% ████████
+NLP/BERT      15% ██████
 ```
 
 ## Data Science Stack
 ```
-Pandas        45% ██████████████████░░░░░░░░░░░░░░░░
-NumPy         35% ██████████████░░░░░░░░░░░░░░░░░░░
-Jupyter       20% ████████░░░░░░░░░░░░░░░░░░░░░░░░░
+Pandas        45% ██████████████████
+NumPy         35% ██████████████
+Jupyter       20% ████████
 ```
 
 ## Backend & APIs
 ```
-FastAPI       35% ██████████████░░░░░░░░░░░░░░░░░░░
-Node.js       30% ████████████░░░░░░░░░░░░░░░░░░░░░
-Express       20% ████████░░░░░░░░░░░░░░░░░░░░░░░░░
-Flask         15% ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░
+FastAPI       35% ██████████████
+Node.js       30% ████████████
+Express       20% ████████
+Flask         15% ██████
 ```
 
 ## DevOps & Tools
@@ -119,7 +119,7 @@ MySQL         25% ██████████░░░░░░░░░░�
 
 ## 🎓 Education & Background
 
-**IIIT Dharwad** (2023-2025)
+**IIIT Dharwad** (2023-2027)
 - Specialization: Data Science & AI
 - Focus: Machine Learning, NLP & Deep Learning
 - Core Skills: Advanced DSA, ML Systems, AI Architecture
